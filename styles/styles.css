@@ -28,8 +28,7 @@ aside img {
 
 main img {
     width: 150px;
-    height: auto;
-    
+    height: auto;    
 }
 
 h1 {color: darkblue;
@@ -43,7 +42,6 @@ img {width: 200px;
 }
 
 p {padding: 0;
-
 }
 
 footer {
