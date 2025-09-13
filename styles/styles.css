@@ -21,6 +21,14 @@ aside {
     text-align: center;
 }
 
+img {
+    width: 200px;
+    height: auto;
+    border: 1px  black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -34,13 +42,6 @@ main img {
 h1 {color: darkblue;
 }
 
-img {
-    width: 200px;
-    height: auto;
-    border: 1px  black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
 
 p {padding: 0;
 }
