@@ -1,8 +1,16 @@
-nav {background-color: darkblue; 
+:root {
+    --nav-header-color: rgb(2, 2, 41);
+    --nav-a-aside-background-color: rgb(148, 87, 17);
+    --img-border-aside-border-color: rgb(17,113,143);
+    
+    
+
+}
+nav {background-color: var(--nav-header-color); 
     padding: 10px;
 }
 
-nav a {color: white;
+nav a {color: var(--nav-a-aside-background-color);
     display: block;
     padding: 20px;
 }
@@ -14,9 +22,9 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2); /* 1️⃣ */
+    border: var(--img-border-aside-border-color);
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--nav-a-aside-background-color);
     color: #333;
     text-align: center;
 }
@@ -24,7 +32,7 @@ aside {
 img {
     width: 200px;
     height: auto;
-    border: 1px  black;
+    border: var(--img-border-aside-border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -39,7 +47,7 @@ main img {
     height: auto;    
 }
 
-h1 {color: darkblue;
+h1 {color: var(--nav-header-color);
 }
 
 
