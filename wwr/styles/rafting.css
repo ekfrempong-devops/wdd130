@@ -89,12 +89,11 @@ nav a:hover {
 }
 
 .about-article img {
-  flex: 0 0 300px; /* size to match sample */
+  flex: 0 0 300px;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  /* Ensure no float */
-  float: none !important;
+  float: none;
 }
 
 
