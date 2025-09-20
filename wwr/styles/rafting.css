@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 
-.hero article {
+article {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -79,11 +79,11 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.hero article img {
+article img {
   width: 200px;
-  margin-left: 1rem; 
+  margin-left: 1rem;
+  border-radius: 8px;
 }
-
 
 
 h1, h2 {
