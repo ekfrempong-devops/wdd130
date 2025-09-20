@@ -84,6 +84,14 @@ article img {
   border-radius: 8px;
 }
 
+.hero article img {
+  width: 250px;
+  height: auto;
+  float: right;
+  margin-left: 1rem;
+  border-radius: 6px;
+}
+
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -103,7 +111,6 @@ footer p {
   font-size: 0.9rem;
 }
 
-.socialmedia img {
-  height: 32px;
-  margin-left: 0.5rem;
+.socialmedia a {
+  text-decoration: none;
 }
