@@ -2,7 +2,7 @@
   --primary-color: #0077B6;   /* River Blue */
   --secondary-color: #00B4D8; /* Rapids Aqua */
   --accent-color: #E2D6FF;    /* Light Purple from wireframe */
-  --heading-font: 'Fredoka One', cursive;
+  --heading-font: 'Arial Black', Gadget, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
   --max-width: 1100px;
 }
