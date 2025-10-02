@@ -90,7 +90,7 @@ main, header, footer {
 .hero h1 {
   position: absolute;
   left: 50%;
-  top: 9%;
+  top: 12%;
   transform: translate(-50%, -50%);
   font-family: var(--heading-font);
   color: #fff;
