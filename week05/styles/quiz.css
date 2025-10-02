@@ -25,14 +25,45 @@ form{
     color: black;
 }
 
+input {
+    padding: 0.5rem;
+    width: 350px;
+}
+
+textarea {
+    padding: 1rem;
+    width: 350px;
+}
+
+select {
+    padding: 0.5rem;
+    width: 350px;
+}
+
 code{
     display: block;
     background-color: black;
     color: azure;
 }
 
+button {
+    background-color: navy;
+    color: #fff;
+    padding: 1rem;
+    width: 350px;
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+
+}
+
 .box{
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid rgba(173, 171, 171, 0.1);
     padding: 1rem;
+}
+
+.quiz-item {
+    border: none;
+
 }
