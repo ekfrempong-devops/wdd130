@@ -82,7 +82,7 @@ main {
 /* --- Map box --- */
 .map {
   flex: 1 1 48%;
-  height: 400px;
+  height: 420px;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   overflow: hidden;
@@ -98,7 +98,6 @@ main {
 /* --- Form box --- */
 .contact-form {
   flex: 1 1 48%;
-  height: 400px;
   background-color: var(--light-bg);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -106,7 +105,7 @@ main {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .contact-form h2 {
@@ -118,7 +117,7 @@ main {
 .contact-form label {
   display: block;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .contact-form input,
@@ -129,11 +128,16 @@ main {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-family: var(--font-body);
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
   resize: none;
-  height: 60px;
+  height: 70px;
+}
+
+.contact-form .radio-group {
+  margin-top: 5px;
 }
 
 .contact-form input[type="radio"],
@@ -142,6 +146,7 @@ main {
 }
 
 .contact-form button {
+  margin-top: 10px;
   width: 100%;
   padding: 10px;
   border: none;
@@ -157,6 +162,12 @@ main {
   background-color: #563a90;
 }
 
+/* Prevent form overflow */
+.contact-form {
+  height: auto;
+  min-height: 420px;
+}
+
 /* ===============================
    EMPLOYEE SECTION
 ================================== */
@@ -167,6 +178,7 @@ main {
   padding: 25px 20px;
   text-align: center;
   margin-bottom: 40px;
+  clear: both;
 }
 
 .employees h2 {
@@ -217,10 +229,14 @@ footer p {
   margin: 5px 0;
 }
 
+footer .social {
+  display: flex;
+  gap: 10px;
+}
+
 footer .social a img {
   width: 25px;
   height: 25px;
-  margin-left: 10px;
   border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 3px;
@@ -243,7 +259,7 @@ footer .social a img:hover {
   .map,
   .contact-form {
     flex: 1 1 100%;
-    height: 350px;
+    height: auto;
   }
 
   .employee-list {
