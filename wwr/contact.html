@@ -2,117 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting Company</title>
     <meta name="description"
-        content="Get in touch with White Water Rafting Company for reservations, general inquiries, or website suggestions. Call, email, or fill out our contact form today!" />
-    <link rel="stylesheet" href="rafting.css" />
+        content="Contact White Water Rafting Company to plan your next river adventure. Find our address, phone, email, and connect with our team.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
-    <!-- ===========================
-       HEADER SECTION
-  ============================ -->
+    <!-- ================== HEADER ================== -->
     <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Company Logo" />
+        <img src="images/logo.png" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
-    <!-- ===========================
-       MAIN CONTENT
-  ============================ -->
+    <!-- ================== MAIN ================== -->
     <main>
-
-        <!-- COMPANY INFORMATION -->
-        <section class="company-info">
-            <h2>White Water Rafting Company</h2>
-            <p>123 Main River Street<br>
-                Kolob, California<br>
-                +1 999 999 9999<br>
-                info@whitewater.com
-            </p>
+        <section class="company-info" style="text-align:center; margin-bottom: 20px;">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street<br>Kolob, California</p>
+            <p>+1 999 999 9999<br>info@whitewater.com</p>
         </section>
 
-        <!-- CONTACT SECTION: MAP + FORM -->
+        <!-- ========= Map and Form Section ========= -->
         <section class="contact-section">
-
-            <!-- MAP PLACEHOLDER -->
+            <!-- Map -->
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15883.291624279873!2d-0.29018265000000004!3d5.5931686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1759616911131!5m2!1sen!2sgh"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.093949545228!2d-122.41941508468125!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a3c4b3f1f%3A0xa0c9bfb49c3b6a69!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1672560773204!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
 
-            <!-- CONTACT FORM -->
-            <div class="contact-form">
+            <!-- Form -->
+            <form class="contact-form" action="#" method="post">
                 <h2>Get in Touch!</h2>
 
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                    <p>Message Purpose:</p>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label>Message Purpose:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="General Inquiry" required> General
+                        Inquiry</label><br>
+                    <label><input type="radio" name="purpose" value="Reservation Question"> Reservation
+                        Question</label><br>
+                    <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+                </div>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
 
-        <!-- EMPLOYEE PROFILES -->
+        <!-- ========= Employee Profiles ========= -->
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
             <div class="employee-list">
-
                 <figure>
                     <img src="images/employee1.jpg" alt="John Doe - Reservations Manager">
                     <figcaption>John Doe - Reservations Manager</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/employee2.jpg" alt="Jane Smith - Safety Coordinator">
                     <figcaption>Jane Smith - Safety Coordinator</figcaption>
                 </figure>
-
                 <figure>
                     <img src="images/employee3.jpg" alt="Mike Johnson - Tour Guide">
                     <figcaption>Mike Johnson - Tour Guide</figcaption>
                 </figure>
-
             </div>
         </section>
-
     </main>
 
-    <!-- ===========================
-       FOOTER SECTION
-  ============================ -->
+    <!-- ================== FOOTER ================== -->
     <footer>
         <p>&copy; 2025 White Water Rafting Company | Designed by Kwasi Brew</p>
         <div class="social">
-            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
-            <a href="#"><img src="images/linkedin.jpg" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
 </body>
