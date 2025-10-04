@@ -82,7 +82,7 @@ main {
 /* --- Map box --- */
 .map {
   flex: 1 1 48%;
-  height: 420px;
+  height: 1000px;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   overflow: hidden;
