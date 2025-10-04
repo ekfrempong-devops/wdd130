@@ -2,8 +2,8 @@
    ROOT COLOR SCHEME & FONTS
 =========================== */
 :root {
-  --primary-color: #bca7e8;   /* light purple background areas */
-  --accent-color: #6a4fa3;    /* darker purple for highlights */
+  --primary-color: #bca7e8;   /* light purple background */
+  --accent-color: #6a4fa3;    /* darker purple */
   --text-color: #000;
   --background-color: #fff;
   --border-color: #000;
@@ -28,8 +28,6 @@ header,
 footer {
   background-color: var(--primary-color);
   border: 1px solid var(--border-color);
-  text-align: center;
-  padding: 10px;
 }
 
 /* ===========================
@@ -60,6 +58,7 @@ nav a {
   border: 1px solid var(--border-color);
   padding: 5px 15px;
   border-radius: 5px;
+  transition: 0.2s;
 }
 
 nav a:hover {
@@ -89,42 +88,40 @@ main {
   margin-bottom: 5px;
 }
 
-.company-info p {
-  margin: 5px 0;
-}
-
 /* ===========================
    MAP + CONTACT FORM LAYOUT
 =========================== */
 .contact-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px; /* adds space between map and form */
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch; /* makes both same height */
+  gap: 40px; /* space between map and form */
   margin-bottom: 40px;
 }
 
-
-
 .map {
   flex: 1 1 300px;
-  min-width: 280px;
+  min-width: 300px;
+  height: 350px; /* fixed height */
   background-color: var(--gray-bg);
   border: 1px solid var(--border-color);
-  height: 250px;
+  border-radius: 8px;
   background-image: url("images/map-placeholder.png");
   background-size: cover;
   background-position: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form {
   flex: 1 1 300px;
-  min-width: 280px;
+  min-width: 300px;
+  height: 350px; /* same height as map */
   background-color: #f9f9f9;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  padding: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form h2 {
@@ -150,7 +147,7 @@ main {
 
 .contact-form textarea {
   resize: none;
-  height: 80px;
+  height: 70px;
 }
 
 .contact-form p {
@@ -178,6 +175,7 @@ main {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
@@ -192,6 +190,7 @@ main {
   border: 1px solid var(--border-color);
   padding: 15px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .employees h2 {
@@ -213,6 +212,8 @@ main {
 
 .employee-list img {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
   border: 1px solid var(--border-color);
   background-color: #ddd;
@@ -228,7 +229,7 @@ main {
 =========================== */
 footer {
   display: flex;
-  justify-content: space-between; /* puts text left, icons right */
+  justify-content: space-between; /* text left, icons right */
   align-items: center;
   flex-wrap: wrap;
   text-align: left;
@@ -254,6 +255,7 @@ footer .social img {
   background-color: #fff;
   border-radius: 5px;
   padding: 3px;
+  transition: 0.3s;
 }
 
 footer .social img:hover {
@@ -275,5 +277,14 @@ footer .social img:hover {
   .employee-list {
     flex-direction: column;
     align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .social {
+    margin-top: 10px;
   }
 }
