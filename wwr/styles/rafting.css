@@ -70,6 +70,12 @@ main {
   max-width: none;
 }
 
+.company-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 /* ===============================
    CONTACT SECTION
 ================================== */
