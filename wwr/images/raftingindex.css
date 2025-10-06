@@ -218,10 +218,11 @@ main, header, footer {
   font-size: 0.95rem;
 }
 
-.socialmedia {
+.socialmedia a {
   display: flex;
   gap: 12px;
   align-items: center;
+  text-decoration: none;
 }
 
 .socialmedia img {
