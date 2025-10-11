@@ -33,55 +33,56 @@
 
         <!-- ========= Map and Form Section ========= -->
         <section class="contact-section">
-            <!-- Map -->
-            <h2 class="sr-only">Contact Information</h2>
+            <h2>Our Location</h2>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.093949545228!2d-122.41941508468125!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a3c4b3f1f%3A0xa0c9bfb49c3b6a69!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1672560773204!5m2!1sen!2sus"
-                    allowfullscreen="" loading="lazy"></iframe>
+                    allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </section>
 
-            <!-- Form -->
-            <form class="contact-form" action="#" method="post">
-                <div class="form-row">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <!-- Form -->
+        <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-row form-row--full">
+                <label for="purpose1">Message Purpose:</label>
+                <div class="radio-group">
+                    <label for="purpose1">
+                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label for="purpose2">
+                        <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label for="purpose3">
+                        <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-                <div class="form-row form-row--full">
-                    <label for="purpose1">Message Purpose:</label>
-                    <div class="radio-group">
-                        <label for="purpose1">
-                            <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
-                            General Inquiry
-                        </label>
-                        <label for="purpose2">
-                            <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
-                            Reservation Question
-                        </label>
-                        <label for="purpose3">
-                            <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
-                            Website Suggestion
-                        </label>
-                    </div>
-                </div>
+            <div class="checkbox-row">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-
-                <div class="checkbox-row">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-
-                <button type="submit">Get In Touch!</button>
-            </form>
+            <button type="submit">Get In Touch!</button>
+        </form>
         </section>
 
         <!-- ========= Employee Profiles ========= -->
