@@ -3,112 +3,186 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting Company</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Trips | White Water Rafting Company</title>
     <meta name="description"
-        content="Contact White Water Rafting Company to plan your next river adventure. Find our address, phone, email, and connect with our team.">
+        content="Whitewater rafting is a type of recreation that involves navigating a non-motorized watercraft down free flowing rivers. A rafting company organizes trips, provides the watercraft, life jackets, etc., and typically offers experienced guides to take passengers down a river. The business intent is to provide a thrilling and safe experience to individuals and groups for a fee.">
     <meta name="author" content="Emmanuel Kwasi Frempong">
-    <link rel="stylesheet" href="styles/raftingcont.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <!-- ================== HEADER ================== -->
+    <!-- HEADER (same structure as other pages) -->
     <header>
         <img src="images/logo.png" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
+            <a href="trips.html" class="active">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <!-- ================== MAIN ================== -->
     <main>
-        <section class="company-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br />Kolob, California</p>
-            <p>+1 999 999 9999<br />info@whitewater.com</p>
+        <!-- HERO: full-width image and heading -->
+        <section class="hero-trips" aria-label="Trips hero">
+            <div class="hero-inner">
+                <h1>Pick Your River Adventure</h1>
+                <p class="hero-sub">Safe, family-friendly and adrenaline-packed trips for everyone</p>
+                <a class="cta-button" href="contact.html">Book or Ask a Question</a>
+            </div>
         </section>
 
-        <!-- ========= Map and Form Section ========= -->
-        <section class="contact-section">
-            <!-- Map -->
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.093949545228!2d-122.41941508468125!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a3c4b3f1f%3A0xa0c9bfb49c3b6a69!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1672560773204!5m2!1sen!2sus"
-                    allowfullscreen="" loading="lazy"></iframe>
+        <!-- HOME: Company offerings block (grid layout) -->
+        <section class="home-offers" aria-labelledby="offers-heading">
+            <h2 id="offers-heading">Our Purpose & Offerings</h2>
+        
+            <div class="offers-grid">
+                <div class="offer">
+                    <img src="images/home1.webp" alt="Family rafting experience">
+                    <h3>Family Adventures</h3>
+                    <p>Gentle stretches for family bonding and safe learning in the river.</p>
+                </div>
+        
+                <div class="offer">
+                    <img src="images/home2.webp" alt="Guided whitewater">
+                    <h3>Guided Whitewater Trips</h3>
+                    <p>Experienced guides, safe equipment and unforgettable rapids.</p>
+                </div>
+        
+                <div class="offer">
+                    <img src="images/home3.webp" alt="Group bookings and events">
+                    <h3>Group & Corporate Events</h3>
+                    <p>Custom packages for groups, team building and school trips.</p>
+                </div>
             </div>
+        </section>
 
-            <!-- Form -->
-            <form class="contact-form" action="#" method="post">
-                <div class="form-row">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <!-- CTA strip to contact page (redundant clear CTA) -->
+        <section class="cta-strip">
+            <p>Ready to go? <a class="cta-inline" href="contact.html">Contact us</a> for reservations and group pricing
+            </p>
+        </section>
+
+        <!-- TRIP DETAILS: grid of trip cards (>= 3) -->
+        <section class="trips-grid" aria-labelledby="trips-heading">
+            <h2 id="trips-heading">Featured Trips</h2>
+
+            <article class="trip-card">
+                <img src="images/trip-family.webp" alt="Family rafting trip" width="600" height="400">
+                <div class="trip-body">
+                    <h3>Family Floats</h3>
+                    <p>Gentle rapids and scenic river stretches. Perfect for families, children and beginners. Includes
+                        safety briefing and lifejackets.</p>
+                    <ul>
+                        <li>Duration: 2–3 hours</li>
+                        <li>Difficulty: Easy</li>
+                        <li>Price: $60/adult</li>
+                    </ul>
+                    <a class="card-cta" href="contact.html">Reserve Family Trip</a>
                 </div>
+            </article>
 
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <article class="trip-card">
+                <img src="images/trip-halfday.webp" alt="Half day rafting trip" width="600" height="400">
+                <div class="trip-body">
+                    <h3>Half-Day Adventure</h3>
+                    <p>More action and several class II–III rapids. Guided trip with snacks and photo package option.
+                    </p>
+                    <ul>
+                        <li>Duration: 5 hours</li>
+                        <li>Difficulty: Moderate</li>
+                        <li>Price: $95/adult</li>
+                    </ul>
+                    <a class="card-cta" href="contact.html">Book Half-Day</a>
                 </div>
+            </article>
 
-                <div class="form-row form-row--full">
-                    <label for="purpose1">Message Purpose:</label>
-                    <div class="radio-group">
-                        <label for="purpose1">
-                            <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
-                            General Inquiry
-                        </label>
-                        <label for="purpose2">
-                            <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
-                            Reservation Question
-                        </label>
-                        <label for="purpose3">
-                            <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
-                            Website Suggestion
-                        </label>
-                    </div>
+            <article class="trip-card">
+                <img src="images/trip-allday.webp" alt="Full day whitewater rafting" width="600" height="400">
+                <div class="trip-body">
+                    <h3>Full-Day Whitewater</h3>
+                    <p>Full adrenaline experience with professional guides, lunch and riverside rest stops. For
+                        experienced and confident beginners too.</p>
+                    <ul>
+                        <li>Duration: 8–9 hours</li>
+                        <li>Difficulty: Intermediate–Advanced</li>
+                        <li>Price: $150/adult</li>
+                    </ul>
+                    <a class="card-cta" href="contact.html">Reserve Full-Day</a>
                 </div>
+            </article>
+        </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        <!-- TRIPS SUMMARY TABLE -->
+        <section class="trips-table" aria-labelledby="summary-table-heading">
+            <h2 id="summary-table-heading">All Trips at a Glance</h2>
+            <div class="table-wrap">
+                <table>
+                    <caption class="sr-only">Summary of all available trips</caption>
+                    <thead>
+                        <tr>
+                            <th>Trip</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Price</th>
+                            <th>Book</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Family Floats</td>
+                            <td>2–3 hrs</td>
+                            <td>Easy</td>
+                            <td>$60</td>
+                            <td><a class="small-cta" href="contact.html">Reserve</a></td>
+                        </tr>
+                        <tr>
+                            <td>Half-Day Adventure</td>
+                            <td>5 hrs</td>
+                            <td>Moderate</td>
+                            <td>$95</td>
+                            <td><a class="small-cta" href="contact.html">Reserve</a></td>
+                        </tr>
+                        <tr>
+                            <td>Full-Day Whitewater</td>
+                            <td>8–9 hrs</td>
+                            <td>Intermediate</td>
+                            <td>$150</td>
+                            <td><a class="small-cta" href="contact.html">Reserve</a></td>
+                        </tr>
+                        <!-- add more rows if needed -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-                <div class="checkbox-row">
-                    <input type="checkbox" id="subscribe" name="subscribe" />
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+        <!-- NEWSLETTER SIGNUP -->
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">Get Trip Updates</h2>
+            <form id="newsletter-form" action="#" method="post" novalidate>
+                <div class="newsletter-row">
+                    <label for="newsletter-name">Name</label>
+                    <input id="newsletter-name" name="newsletter-name" type="text" required>
                 </div>
-
-                <button type="submit">Get In Touch!</button>
+                <div class="newsletter-row">
+                    <label for="newsletter-email">Email</label>
+                    <input id="newsletter-email" name="newsletter-email" type="email" required>
+                </div>
+                <button class="cta-button" type="submit">Sign Me Up</button>
             </form>
         </section>
 
-        <!-- ========= Employee Profiles ========= -->
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-            <div class="employee-list">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Jane Smith - Safety Coordinator">
-                    <figcaption>Jane Smith - Safety Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="John Doe - Reservations Manager">
-                    <figcaption>John Doe - Reservations Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Mike Johnson - Tour Guide">
-                    <figcaption>Mike Johnson - Tour Guide</figcaption>
-                </figure>
-            </div>
-        </section>
     </main>
 
-    <!-- ================== FOOTER ================== -->
+    <!-- FOOTER (same as other pages) -->
     <footer>
         <p>&copy; 2025 White Water Rafting Company | Designed by Kwasi Brew</p>
         <div class="social">
-            <a href="#"><img src="images/facebook.jpg" alt="Facebook" /></a>
-            <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn" /></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
         </div>
     </footer>
 </body>
