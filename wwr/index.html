@@ -3,65 +3,99 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Emmanuel Kwasi Frempong| WDD 130 | Personal Homepage </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Home | Whitewater Family Rafting</title>
     <meta name="description"
-        content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
-    <meta name="author"
-        content="Emmanuel Kwasi Frempong, pursuing course WDD 130. The purpose of the page is to display my personal home page.">
-    <link rel="stylesheet" href="styles/styles.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        content="Experience thrilling and safe rafting adventures with Whitewater Family Rafting. Join us for guided trips and unforgettable outdoor fun.">
+    <meta name="author" content="Emmanuel Kwasi Frempong">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Whitewater Family Rafting logo">
+            </a>
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-            <a href="https://linkedin.com">Linkedin Profile</a>
-            <a href="https://facebook.com">Facebook Profile</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main class="grid">
-        <h1> Emmanuel Kwasi Frempong | WDD 130</h1>
-        <img src="images/profile.webp" alt="Hello, my name is Emmanuel Kwasi Frempong" width="200">
-        <p> Hello! My name is Emmanuel Kwasi Frempong. I am a proud Ghanaian and I hold a bachelor’s degree in Natural
-            Resource Management. I have over five years of combined experience in hospitality and FMCG sales, with
-            strong skills in client relationship
-            management, sales growth, and premium brand visibility. Beyond this, I am deeply passionate about
-            cybersecurity and software
-            engineering, and I am actively building my expertise in these fields to create innovative solutions and
-            protect digital
-            systems. I am committed to personal growth, faith, and resilience, with a vision of building a meaningful
-            career that
-            blends technology, security, and service.</p>
 
-            <ul class="box indent">
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Accra-Ghana-Temple-1-6-12-2.jpg" target="_blank">Accra Ghana Temple</a></li>
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Aba-Nigeria-Temple-1-6-12-1.jpg" target="_blank">Aba Nigeria Temple</a></li>
-                <li><a href="https://newsroom.churchofjesuschrist.org/media/960x540/Bern_Switzerland_Temple3.jpg" target="_blank">Bern Switzerland Temple</a></li>
-                <li></li>
-            </ul>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/heroimage.jpg" alt="Rafting Adventure on the River">
+            <h1>Experience the Thrill of Whitewater Rafting!</h1>
+        </section>
 
+        <!-- PURPOSE & OFFERINGS (GRID LAYOUT) -->
+        <section class="home-offers">
+            <h2>Why Choose Whitewater Family Rafting?</h2>
+            <div class="offers-grid">
+                <div class="offer">
+                    <img src="images/home1.webp" alt="Rafting Guide and Team on River">
+                    <h3>Expert Guides & Safety First</h3>
+                    <p>Our trained guides ensure every adventure is safe, exciting, and unforgettable for individuals
+                        and families alike.</p>
+                </div>
+
+                <div class="offer">
+                    <img src="images/home2.webp" alt="Group enjoying rafting adventure">
+                    <h3>Adventures for Everyone</h3>
+                    <p>Whether it’s your first time or your fiftieth, we have river routes that match your skill level
+                        and thrill-seeking spirit.</p>
+                </div>
+
+                <div class="offer">
+                    <img src="images/home3.webp" alt="Family rafting together">
+                    <h3>Memories that Last</h3>
+                    <p>Enjoy nature, teamwork, and fun as you create moments to remember with your friends, family, or
+                        group.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION STRIP -->
+        <section class="cta-strip">
+            <p>Ready for an unforgettable experience? <a href="trips.html">Book Your Trip Now!</a></p>
+        </section>
+
+        <!-- NEWSLETTER SIGNUP -->
+        <section class="newsletter">
+            <h2>Join Our Adventure Newsletter</h2>
+            <p>Stay updated on new rafting trips, seasonal offers, and river news!</p>
+            <form class="newsletter-form" action="#" method="post">
+                <div class="newsletter-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="newsletter-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
-    <aside class="grid">
-        <h2> Ghana </h2>
-        <img src="images/square.jpg" alt="A picture of the iconic Independence Square">
-        <p> Ghana is a country in West Africa located on the Gulf of Guinea, known for its tropical climate, diverse
-            landscape including rainforests and savanna, and rich cultural heritage. As the first sub-Saharan nation to
-            gain
-            independence from colonial rule in 1957, it has evolved into a multi-party democracy with a growing economy,
-            primarily driven
-            by natural resources like gold, cocoa, and oil. The capital is Accra, and the country is characterized by
-            its warm,
-            welcoming population and vibrant cultural scene</p>
-    </aside>
-    <footer>
-        <p>©️ 2025 💻 Emmanuel Kwasi Frempong 💻 Accra, Ghana📍🌍</p>
+
+    <footer class="site-footer">
+        <p>© 2025 Whitewater Family Rafting | Emmanuel Kwasi Frempong</p>
+        <nav class="socialmedia" aria-label="Social links">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook.jpg" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram.jpg" alt="Instagram Icon">
+            </a>
+        </nav>
     </footer>
 </body>
 
